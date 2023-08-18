@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 py-5 md:py-16 grid grid-cols-3 gap-3">
+        <!-- ist cars -->
+        <div class="card w-50 bg-base-100 shadow-xl">
+            <figure><img src="./images/triangle.png" alt="Shoes" class="flex justify-center items-center" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center flex justify-center items-center">Triangle</h2>
+              <p class="text-center">Area(A):0.5*b*h</p>
+
+              <p class="text-center space-y-2 inline">
+               <!-- height -->
+               <input type="email" id="triangle-height" class="border border-gray-300 w-20 px-2 py-1 rounded-md
+                ml-2" placeholder="height">
+               <!-- base -->
+               
+               <input type="email" id="triangle-base" class="border border-gray-300 w-20 px-2 py-1 rounded-md ml-2" placeholder="base">
+               <!-- area -->
+               <p class="text-center">Area:<span id="triangle-area">0 cm<sup>2</sup></span></p>
+            </p>
+
+              <div class="card-actions w-full">
+                <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd card -->
+          <div class="card w-50 bg-base-100 shadow-xl">
+            <figure><img src="./images/rectangle.png" alt="Shoes" class="flex justify-center items-center" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-center flex justify-center items-center">Rectangle</h2>
+              <p class="text-center">Area(A):b*h</p>
+
+              <p class="text-center space-y-2 inline">
+               <!-- height -->
+               <input type="email" id="rectangle-height" class="border border-gray-300 w-20 px-2 py-1 rounded-md
+                ml-2" placeholder="height">
+               <!-- base -->
+               
+               <input type="email" id="rectangle-base" class="border border-gray-300 w-20 px-2 py-1 rounded-md ml-2" placeholder="base">
+               <!-- area -->
+               <p class="text-center">Area:<span id="rectangle-area">0 cm<sup>2</sup></span></p>
+            </p>
+
+              <div class="card-actions w-full">
+                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+            <!-- 3rd card -->
+            <div class="card w-50 bg-base-100 shadow-xl">
+                <figure><img src="./images/rhombus.png" alt="Shoes" class="flex justify-center items-center" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-center flex justify-center items-center">Rectangle</h2>
+                  <p class="text-center">Area(A):(p*q)/2</p>
+    
+                  <p class="text-center space-y-2 inline">
+                   <!-- height -->
+                   <input type="email" id="rombos-height" class="border border-gray-300 w-20 px-2 py-1 rounded-md
+                    ml-2" placeholder="height">
+                   <!-- base -->
+                   
+                   <input type="email" id="rombos-base" class="border border-gray-300 w-20 px-2 py-1 rounded-md ml-2" placeholder="base">
+                   <!-- area -->
+                   <p class="text-center">Area:<span id="rombos-area">0 cm<sup>2</sup></span></p>
+                </p>
+    
+                  <div class="card-actions w-full">
+                    <button onclick="calculateRombosArea()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+    </section>
+    <script src="areaCalculation.js"></script>
+    
+</body>
+</html>
